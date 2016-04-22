@@ -79,7 +79,7 @@ public class RatingFrame {
 		lblRating.setBounds(57, 110, 46, 14);
 		frame.getContentPane().add(lblRating);
 	
-		sql = "UPDATE FILMS set RATE = rating where NAME = name;"; //Does this work? How can i do it?
+		sql = "UPDATE ΜOVIE set RATE = "+rating+" WHERE NAME = "+name+";"; //Does this work? How can i do it?
 		stmt.executeUpdate(sql);
 	
 	}
